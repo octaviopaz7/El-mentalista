@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>Mentalista</title>
+</head>
+<body>
+  <header>
+      <a href="https://www.aluracursos.com/" target="_blank">
+        <img src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg" alt="" class="alura-latam-logo">
+      </a>
+  </header>
+
+  <main>
+  <div class="conteiner">
+      <h1 class="pageTitle">Mentalista</h1>
+      <img src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png" class="page-logo" alt="">
+  </div>
+  <div class="conteinerImagen">
+      <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Ilustra%C3%A7%C3%A3o-c%C3%A9rebro+1.png">
+  </div>
+  <div class="conteinerInputs">
+    <fieldset class="inputs">
+      <legend class="Indicaciones"></legend>
+      <p class="textoParrafo" id="texto-generado"></p>
+      <label for="numero-usuario" onkeydown="limitarInputMax100(event)" ></label>
+      <input type="number" id="numero-usuario" class="inputNumero">
+      <button id="intentar"  class="botones" onclick="verificarIntento()"> intentar</button>
+      <button id="nuevo-juego" class="botones" onclick="reiniciarJuego()" disabled>Nuevo Juego</button>
+    </fieldset>
+  </div>
+     
+  </main>
+
+  <footer>
+    <p class="copyright">&copy Copyright OctavioPaz / Alura Latam 2024</p>
+  </footer>
+
+</body>
+<script src="app.js"></script>
+</html>
